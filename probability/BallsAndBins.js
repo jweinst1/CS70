@@ -15,21 +15,41 @@ function indistbins(amount) {
 }
 //creates an array of indisinct balls for sampling.
 function ballset (amount) {
-    arr = [];
+    var arr = [];
     for(i=0;i<amount;i++) arr.push("*");
     return arr;
 }
 //iterator of a container of indistinct balls, useful for sampling.
 var balliter = function(amount) {
     this.balls = ballset(amount);
-    this.length = this.balls.length;
     this.next = function() {
         if(this.length==0) throw "Stop Iteration";
         else {
             return this.balls.pop();
         }
     }
+    this.hasnext = function() {
+        if(this.balls.length==0) return false;
+        else return true;
+    }
 };
+//sets up a process of randomly distributing an indistinct amount of balls to indistinct bins, and
+//returns the array of arrays for bins.
+//[ [ '*', '*' ], [ '*' ], [ '*', '*', '*' ], [], [], [] ]
+function indist_to_bin (balls, bins) {
+    var bin = indistbins(bins);
+    var machine = new balliter(balls);
+    while (machine.hasnext()) bin[rand_interval(0, bin.length-1)].push(machine.next());
+    return bin;
+}
+
+/* sets up a process similar to above, but with a distinct set of bins as an object. */
+function to_dist_bin (balls, bins) {
+    var bin = new distbins(bins);
+    var machine = new balliter(balls);
+    while (machine.hasnext()) bin[Object.keys(bin)[rand_interval(0, bin.length-1)]].push(machine.next());
+    return bin;
+}
 
 
 
