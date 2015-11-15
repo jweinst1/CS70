@@ -14,6 +14,11 @@ function picking_prob(lst, elem) {
  0.125
 */
 
+//returns the complement of picking an element from an array.
+function complement_prob(lst, elem) {
+    return 1 - picking_prob(lst, elem);
+}
+
 //Object that gives the individual probabilities for picking each element in an array
 var probability_set = function(lst) {
     for(var num in lst) this[lst[num]] = picking_prob(lst, lst[num]);
@@ -30,6 +35,12 @@ function cond_pick_prob(lst, first, elem) {
     lst.pop(first);
     var prob = count_elem(lst, elem)/lst.length;
     return prob;
+}
+//returns the condition probability of picking elem, given first has occured uses Baye's Theorem.
+function bayes_condprob(lst, first, elem) {
+    var given = picking_prob(lst, first);
+    var first_and_elem = given*picking_prob(lst, elem);
+    return first_and_elem/given;
 }
 
 
