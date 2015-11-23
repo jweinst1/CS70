@@ -26,21 +26,27 @@ var double_opers = {
     find_root : function(dbset, root) {
         for(var parent in dbset) if(root in dbset[parent]) return parent;
     },
-    union : function(dbset1, dbset2) {
-        //needs fixing, overwrites parents
-        var result = {};
-        for(var key in dbset1) result[key] = dbset1[key];
-        for(var key2 in dbset2) result[key2] = dbset2[key2];
-        return result;
+    get_random_root : function (dbset) {
+        var choices = Object.keys(dbset);
+        choices = dbset[choices[rand_interval(0, choices.length)]];
+        var select = Object.keys(choices);
+        return choices[select[rand_interval(0, select.length)]];
     }
 };
 
-var f = new double_set("red", "blue", [1, 2, 3], [4, 5, 6]);
-console.log(double_opers.find_root(f, 2));
+
 
 
 
 
 // { red: { '1': true, '2': true, '3': true },
 //blue: { '4': true, '5': true, '6': true } }
+
+//returns a number from x to y randomly, throws an error if x is y.
+function rand_interval(x, y) {
+    if(x===y) throw "Value Error";
+    else {
+        return Math.floor((Math.random() * y) + x);
+    }
+}
 

@@ -45,17 +45,23 @@ var set_opers = {
         return result;
     },
     intersection_all : function() {
-        var all = this.union_all(arguments);
-        for(var key in all) {
-            for(i=0;i<arguments.length;i++) {
-                if (!(key in arguments[i])) {
-                    delete key;
-                }
-            }
+        var input = arguments;
+        while(input.length>1) {
+            input[0] = set_opers.intersection(input[0], input[1]);
+            delete input[1];
         }
-        return all;
+        return input[0];
+    },
+    //deletes the elements in set1 if they are also in set2
+    subtract : function(set1, set2) {
+        for(var elem in set2) if (elem in set1) delete set1[elem];
+        return set1;
     }
 };
+
+
+
+
 //returns true if set2 is contained in set1
 function contained_in(set1, set2) {
     if(set_opers.size(set1) <= set_opers.size(set2)) return false;
