@@ -10,6 +10,16 @@ class hnode:
         return str(self.left) + "<-"+ str(self.value) + "->" + str(self.right)
     def __repr__(self):
         return str(self.left) + "<-"+ str(self.value) + "->" + str(self.right)
+    def getrightval(self):
+        if self.right != None:
+            return self.right.value
+        else:
+            return False
+    def getleftval(self):
+        if self.left != None:
+            return self.left.value
+        else:
+            return False
 
 #tools
 #checks if child nodes lower than value of parent node
@@ -46,5 +56,17 @@ class heap_cons:
             return hnode(lst[0])
         else:
             return hnode(lst.pop(0), heap_cons.lsttoheap(lst[:len(lst)//2]), heap_cons.lsttoheap(lst[len(lst)//2:]))
-
+#converts a heap into order
 def heapify(heap):
+    if isleaf(heap):
+        return heap
+    elif heap.getrightval() > heap.value:
+        swapheaps(heap, heap.right)
+    elif heap.getleftval() > heap.value:
+        swapheaps(heap, heap.left)
+    else:
+        heapify(heap.left)
+        heapify(heap.right)
+
+def appendheap(heap, item):
+    pass
