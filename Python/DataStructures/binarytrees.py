@@ -61,7 +61,7 @@ class b_constructors:
 
 
 #searches a btree with tree recursion
-def search_btree(btree, value):
+def search_btree(value, btree, btree2=None):
     if btree == None:
         return False
     elif btree.value == value:
