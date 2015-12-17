@@ -68,6 +68,14 @@ def search_btree(value, btree, btree2=None):
         return True
     else:
         return search_btree(btree.left, value), search_btree(btree.right, value)
+#prints all the nodes in a btree, starting at the root
+def printallbtree(btree):
+    if btree == None:
+        return None
+    else:
+        print(btree.value)
+        printallbtree(btree.left)
+        printallbtree(btree.right)
 
 #returns values for right most btree branch
 def getright_branch(btree):

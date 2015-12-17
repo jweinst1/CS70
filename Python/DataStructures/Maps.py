@@ -18,12 +18,15 @@ def create_map(keys, vals):
         addentry(mapp, keys[i], vals[i])
 
 #simple map node class, with an entry point and list of conenctions
-class mapnode:
+class mapnode (object):
 
-    def __init__(self, value, connections=[]):
+    def __init__(self, value):
         self.value = value
-        self.connections = connections
-    def addconnect(self, item):
-        self.connections.append(mapnode(item))
-    def getconencts(self):
-        return [elem.value for elem in self.connections]
+    def addnode(self, val):
+        self.__dict__[val] = mapnode(val)
+        self.__dict__[val].__dict__[self.value] = self
+    def getnames(self):
+        return list(self.__dict__.keys())
+    @property
+    def getnodes(self):
+        return [self.__dict__[elem] for elem in self.__dict__.keys()]
