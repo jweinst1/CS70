@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8870b5-2cd2-47c2-aba4-b3afa1b261c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/DataStructures/OrderedSet.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/Sorting/Mergesort.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/DataStructures/Hashtable.py" afterPath="$PROJECT_DIR$/Python/DataStructures/Hashtable.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/DataStructures/Heaps.py" afterPath="$PROJECT_DIR$/Python/DataStructures/Heaps.py" />
     </list>
     <ignored path="CS70.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,26 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LinkedLists.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/DataStructures/LinkedLists.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="binarytrees.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/DataStructures/binarytrees.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BubbleSort.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/Sorting/BubbleSort.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,7 +40,27 @@
         <entry file="file://$PROJECT_DIR$/Python/DataStructures/Heaps.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+              <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mergesort.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python/Sorting/Mergesort.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.14473684">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graphs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python/DataStructures/Graphs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -116,10 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderedSet.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderedSet.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/DataStructures/OrderedSet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.078947365">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding />
             </state>
@@ -166,7 +166,6 @@
         <option value="$PROJECT_DIR$/Python/DataStructures/LinkedLists.py" />
         <option value="$PROJECT_DIR$/Python/DataStructures/Graphs.py" />
         <option value="$PROJECT_DIR$/Python/Sorting/BubbleSort.py" />
-        <option value="$PROJECT_DIR$/Python/DataStructures/Heaps.py" />
         <option value="$PROJECT_DIR$/Python/DataStructures/binarytrees.py" />
         <option value="$PROJECT_DIR$/Python/DataStructures/Maps.py" />
         <option value="$PROJECT_DIR$/Python/Sorting/Quicksort.py" />
@@ -174,6 +173,8 @@
         <option value="$PROJECT_DIR$/Python/Coding_challenges/integerproblems.py" />
         <option value="$PROJECT_DIR$/Python/DataStructures/Hashtable.py" />
         <option value="$PROJECT_DIR$/Python/DataStructures/OrderedSet.py" />
+        <option value="$PROJECT_DIR$/Python/DataStructures/Heaps.py" />
+        <option value="$PROJECT_DIR$/Python/Sorting/Mergesort.py" />
       </list>
     </option>
   </component>
@@ -921,26 +922,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/DataStructures/Graphs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python/DataStructures/LinkedLists.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/DataStructures/Heaps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1003,8 +988,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/DataStructures/OrderedSet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.078947365">
+        <state vertical-scroll-proportion="0.0">
           <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/DataStructures/Graphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/DataStructures/Heaps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Sorting/Mergesort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.14473684">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding />
         </state>
       </provider>

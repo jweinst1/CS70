@@ -30,7 +30,9 @@ def isheap(heap):
         return False
 
 def isleaf(heap):
-    if heap.left == None and heap.right == None:
+    if heap == None:
+        raise ValueError
+    elif heap.left == None and heap.right == None:
         return True
     else:
         return False
@@ -49,7 +51,7 @@ def get_max(lst):
 class heap_cons:
 
     @staticmethod
-    def lsttoheap(lst):
+    def lsttoheap(lst) -> hnode:
         if len(lst) == 0:
             return None
         elif len(lst) == 1:
@@ -68,5 +70,23 @@ def heapify(heap):
         heapify(heap.left)
         heapify(heap.right)
 
+def check_if_heap(heap):
+    if isleaf(heap):
+        print(True)
+    elif heap.getrightval() > heap.value:
+        print(False)
+    elif heap.getleftval() > heap.value:
+        print(False)
+    else:
+        check_if_heap(heap.left)
+        check_if_heap(heap.right)
+
 def appendheap(heap, item):
-    pass
+    if heap.left == None or heap.right == None:
+        heap.left = hnode(item)
+    elif heap.getrightval() > item:
+        appendheap(heap.right, item)
+    elif heap.getleftval() > item:
+        appendheap(heap.left, item)
+    else:
+        return "Heap is not sorted"
