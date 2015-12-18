@@ -37,3 +37,21 @@ def largest_rise(stockprices):
 def largest_fall(stockprices):
     return min(get_pricechanges(stockprices))
 
+def average_change(stockprices):
+    prices = get_pricechanges(stockprices)
+    return sum(prices)//len(prices)
+
+def median_change(stockprices):
+    prices = get_pricechanges(stockprices)
+    tomidday = prices[len(prices)//2:]
+    return tomidday[len(tomidday)-1]
+
+def count_rises(stockprices):
+    return len([elem for elem in get_pricechanges(stockprices) if elem > 0])
+
+def count_falls(stockprices):
+    return len([elem for elem in get_pricechanges(stockprices) if elem < 0])
+
+def risetofall_ratio(stockprices):
+    return count_rises(stockprices)/count_falls(stockprices)
+
