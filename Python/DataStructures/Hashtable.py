@@ -5,9 +5,14 @@ class col_node:
     def __init__(self, value, next=None):
         self.value = value
         self.next = next
+    def __repr__(self):
+        return str(self.value)
+    def __str__(self):
+        return str(self.value)
+
 
 class hashtable:
-
+    #for storing values only
     def __init__(self, size):
         self.size = size
         self.table = [None for i in range(size+1)]
@@ -18,11 +23,19 @@ class hashtable:
     @property
     def values(self):
         return [elem for elem in self.table if elem]
+    @property
+    def empty_slots(self):
+        return [i for i in range(len(self.tables)) if not self.tables[i]]
     def put(self, value):
+        #accounts for collisions with chaining
         hash_val = hashstring(value)
         if hash_val > self.size+1:
             hash_val %= self.size
-            self.table[hash_val] = value
+            if not self.table[hash_val]:
+                self.table[hash_val] = value
+            else:
+                self.table[hash_val] = col_node(self.table[hash_val])
+                self.table[hash_val].next = value
         else:
             self.table[hash_val] = value
     def check(self, value):
@@ -38,6 +51,8 @@ class hashtable:
                 return True
             else:
                 return False
+    def get(self, index):
+        return self.table[index]
 
 def collapse_int(num):
     numlst = list(str(num))
@@ -60,3 +75,11 @@ def name_to_int(string):
 def hashstring(string):
     val = name_to_int(string)
     return collapse_int(val)
+
+#table with keys and values
+class hashkv_table:
+
+    def __init__(self, size):
+        self.size = size
+        self.slots = [None for i in range(size+1)]
+        self.data = [None for i in range(size+1)]

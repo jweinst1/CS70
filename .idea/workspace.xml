@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8870b5-2cd2-47c2-aba4-b3afa1b261c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/Coding_challenges/integerproblems.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/DataStructures/Hashtable.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python/DataStructures/OrderedSet.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Coding_challenges/AppleStocks.py" afterPath="$PROJECT_DIR$/Python/Coding_challenges/AppleStocks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/DataStructures/Hashtable.py" afterPath="$PROJECT_DIR$/Python/DataStructures/Hashtable.py" />
     </list>
     <ignored path="CS70.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,16 +31,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graphs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/DataStructures/Graphs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -117,11 +106,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hashtable.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hashtable.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/DataStructures/Hashtable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.118421055">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="76" column="28" selection-start-line="56" selection-start-column="0" selection-end-line="76" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderedSet.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python/DataStructures/OrderedSet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.078947365">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -174,6 +173,7 @@
         <option value="$PROJECT_DIR$/Python/Coding_challenges/AppleStocks.py" />
         <option value="$PROJECT_DIR$/Python/Coding_challenges/integerproblems.py" />
         <option value="$PROJECT_DIR$/Python/DataStructures/Hashtable.py" />
+        <option value="$PROJECT_DIR$/Python/DataStructures/OrderedSet.py" />
       </list>
     </option>
   </component>
@@ -995,8 +995,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/DataStructures/Hashtable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.118421055">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="28" selection-start-line="56" selection-start-column="0" selection-end-line="76" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/DataStructures/OrderedSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.078947365">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
           <folding />
         </state>
       </provider>
